@@ -174,18 +174,108 @@ thanksModal.classList.add('hidden');
 });
 
 // Находим все кнопки вопросов FAQ
+// querySelectorAll возвращает список всех элементов
+// с классом .faq-question
+
 const buttons = document.querySelectorAll(".faq-question");
 
-// Перебираем каждую найденную кнопку
+
+// Находим все карточки FAQ
+// Каждая карточка содержит:
+// - кнопку с вопросом
+// - блок с ответом
+
+const items = document.querySelectorAll(".faq-item");
+
+
+// Перебираем все кнопки вопросов
+// Для каждой кнопки добавляем обработчик клика
+
 buttons.forEach(function(button) {
 
-    // Добавляем обработчик клика
+
+    // addEventListener отслеживает событие "click"
+    // Когда пользователь нажимает на вопрос,
+    // запускается функция внутри
+
     button.addEventListener("click", function() {
 
-        // Получаем родительский элемент (.faq-item)
-        // и переключаем класс active
-        button.parentElement.classList.toggle("active");
+
+        // parentElement поднимается на один уровень вверх по DOM
+
+        // Наша структура:
+        //
+        // button.faq-question
+        //        |
+        //        ↓
+        // div.faq-item
+        //
+        // Поэтому получаем карточку,
+        // к которой относится нажатый вопрос
+
+        const item = button.parentElement;
+
+
+
+        // Проверяем, есть ли у карточки класс active
+
+        // classList.contains("active")
+        // возвращает:
+        //
+        // true  — если класс есть
+        // false — если класса нет
+
+        // То есть переменная отвечает на вопрос:
+        //
+        // "Этот FAQ сейчас открыт?"
+
+        const isOpen = item.classList.contains("active");
+
+
+
+        // Если вопрос уже открыт
+
+        if (isOpen) {
+
+
+            // Убираем класс active
+
+            // После этого CSS скрывает ответ
+
+            item.classList.remove("active");
+
+
+        } else {
+
+
+            // Если вопрос был закрыт,
+            // сначала закрываем все остальные вопросы
+
+
+            items.forEach(function(item) {
+
+
+                // Удаляем active у каждой карточки
+
+                // В итоге все ответы закрываются
+
+                item.classList.remove("active");
+
+
+            });
+
+
+
+            // Теперь открываем только тот вопрос,
+            // по которому пользователь кликнул
+
+            item.classList.add("active");
+
+
+        }
+
 
     });
+
 
 });
