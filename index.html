@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная - Константин Мордасов</title>
+    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<header>
+ <div class="header-container">
+
+        <a href="index.html" class="logo">
+            Константин Мордасов
+        </a>
+
+        <nav class="menu">
+            <a href="index.html" class="active">Главная</a>
+            <a href="projects.html">Проекты</a>
+            <a href="contacts.html">Контакты</a>
+        </nav>
+
+    </div>
+    <hr>
+</header> 
+
+<main>
+
+    <section class="hero">
+        <div class="hero-content"> 
+            <h1>
+    Константин Мордасов - Fullstack Developer. Backend-первопроходец с Frontend-компасом.
+</h1>
+        <p>
+             Прокладываю надёжные серверные тропы в мире данных и создаю понятные интерфейсы, чтобы пользователи уверенно достигали своей цели.
+             Помогаю стартапам и бизнесу превращать идеи в полноценные цифровые продукты, сопровождая проект на всём пути — от архитектуры базы данных до последней кнопки интерфейса.
+        </p>
+       
+        <p>
+            Если вы устали искать «переводчиков» между дизайнером, фронтенд- и бэкенд-разработчиком, вы нашли человека, который отвечает за весь маршрут разработки и доводит проект до результата.
+        </p>  
+        
+<div class="hero-buttons">
+    <a href="projects.html" class="button button-secondary">   
+        Посмотреть проекты
+    </a> 
+  
+    <a href="https://t.me/M_K_S_NutriGuru" rel="noopener noreferrer" target="_blank" class="button button-primary">
+         Обсудить проект
+    </a>
+
+
+
+
+    <!-- Кнопка открытия формы -->
+
+<button id="open-feedback-btn" class="feedback-btn"> Написать мне </button>
+
+<!-- Модальное окно формы -->
+
+<div id="feedback-modal" class="modal hidden">
+
+<div class="modal-content">
+
+  <!-- Кнопка закрытия -->
+  <span class="close-btn">&times;</span>
+
+  <h2>Форма обратной связи</h2>
+
+  <form id="feedback-form">
+
+    <label for="name">Имя</label>
+    <input
+      type="text"
+      id="name"
+      name="name"
+      required
+      placeholder="Ваше имя"
+    >
+
+    <label for="email">Email</label>
+    <input
+      type="email"
+      id="email"
+      name="email"
+      required
+      placeholder="example@mail.com"
+    >
+
+    <label for="message">Сообщение</label>
+    <textarea
+      id="message"
+      name="message"
+      rows="5"
+      required
+      placeholder="Ваш вопрос"
+    ></textarea>
+
+    <button type="submit" class="submit-btn">
+      Отправить
+    </button>
+
+  </form>
+
+</div>
+
+</div>
+
+<!-- Модальное окно «Спасибо» -->
+
+<div id="thanks-modal" class="modal hidden">
+
+<div class="modal-content modal-thanks">
+
+  <h2>Ваша заявка принята!</h2>
+
+  <p>
+    Свяжемся с Вами в ближайшее время.
+  </p>
+
+  <button id="close-thanks-btn" class="submit-btn">
+    Закрыть
+  </button>
+
+</div>
+
+</div>
+
+<!-- Подключение библиотеки EmailJS -->
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"> </script>
+
+</div>
+        </div>
+
+    
+
+
+<div class="hero-image">
+    <img src="images/Фото разработчика.jpg" alt="Фотография разработчика">
+</div>
+    </section>
+
+    <!-- Блок FAQ -->
+
+     <section class="faq">
+
+    <h2>Часто задаваемые вопросы</h2>
+
+    <div  class="faq-category">
+
+    <h3>Общие вопросы о старте проекта</h3>
+
+    <div class="faq-item">
+
+        <button class="faq-question">
+            <span>Сколько стоит разработка сайта?</span>
+             <span>▼</span>
+        </button>
+
+        <div class="faq-answer">
+
+            <p>
+                Стоимость зависит от сложности проекта.
+            </p>
+
+        </div>
+
+    </div>
+
+        <div class="faq-item">
+
+        <button class="faq-question">
+            <span>Я не технарь, боюсь, что не смогу нормально объяснить задачу. Как мы будем работать?</span>
+             <span>▼</span>
+        </button>
+
+        <div class="faq-answer">
+
+            <p>
+                Я начинаем с брифа и созвона, где задаю наводящие вопросы и помогаю сформулировать требования. По итогам подготовлю краткое ТЗ простыми словами — вы его подтвердите, и только потом начнётся разработка.
+            </p>
+
+        </div>
+
+    </div>
+
+     <div class="faq-item">
+
+    <button class="faq-question">
+            <span>У меня есть идея, но нет чёткого плана. Вы берёте такие проекты?</span>
+             <span>▼</span>
+        </button>
+
+        <div class="faq-answer">
+
+            <p>
+                Да. Я помогаю упаковать идею в рабочий план: делаю анализ рынка, определяю MVP (минимально жизнеспособный продукт), расставляю приоритеты функций и составляю дорожную карту, чтобы вы понимали, что и когда получите.
+            </p>
+
+        </div>
+
+        </div>
+
+      </div>
+
+         <div class="faq-category">
+
+        <h3>Вопросы про сроки и дедлайны</h3>
+
+         <div class="faq-item">
+
+        <button class="faq-question">
+            <span>Боюсь, что проект затянется, а деньги будут уходить. Как Вы контролируете сроки?</span>
+             <span>▼</span>
+        </button>
+
+        <div class="faq-answer">
+
+            <p>
+                Работаю по этапам с чёткими сроками и результатами. Каждый этап фиксируется в договоре. Использую трекер задач и еженедельные отчёты: вы видите прогресс, статусы и оставшиеся задачи. Если появляются риски по срокам — сообщаю заранее и корректирую план.
+            </p>
+
+        </div>
+
+        </div>
+
+         <div class="faq-item">
+
+        <button class="faq-question">
+            <span>Что, если Вы не успеете к моему важному событию/запуску?</span>
+             <span>▼</span>
+        </button>
+
+        <div class="faq-answer">
+
+            <p>
+                На этапе оценки я закладываю буфер времени на непредвиденные ситуации. Если дедлайн критичен, делаю MVP с самым важным функционалом, чтобы успеть к дате, а остальное дорабатываю позже.
+            </p>
+
+        </div>
+
+        </div>
+
+      </div>
+
+        <div class="faq-category">
+
+        <h3>Вопросы про бюджет и деньги</h3>
+
+         <div class="faq-item">
+
+        <button class="faq-question">
+            <span>Не хочу переплачивать. Как понять, что цена адекватная?</span>
+             <span>▼</span>
+        </button>
+
+        <div class="faq-answer">
+
+            <p>
+                Сначала делаю оценку по этапам и фиксирую стоимость каждого блока. Если бюджет ограничен, предлагаю варианты: упростить дизайн, использовать готовые решения, разбить проект на фазы. Вы видите, за что платите, и можете управлять объёмом работ.
+            </p>
+
+        </div>
+
+        </div>
+
+         <div class="faq-item">
+
+        <button class="faq-question">
+            <span>А если в процессе появятся новые хотелки — это сильно увеличит цену?</span>
+             <span>▼</span>
+        </button>
+
+        <div class="faq-answer">
+
+            <p>
+                 Любые изменения оцениваются отдельно и согласовываются до начала работ. Есть два варианта: либо добавляю в следующий этап без спешки, либо делаю экспресс‑оценку, если нужно срочно. Никаких скрытых доплат без вашего согласия.
+            </p>
+
+        </div>
+
+        </div>
+
+      </div>
+
+        <div class="faq-category">
+         <h3>Вопросы про качество и поддержку после сдачи</h3>
+
+         <div class="faq-item">
+
+        <button class="faq-question">
+            <span>Сделаете и пропадёте? Кто будет чинить, если сайт сломается?</span>
+             <span>▼</span>
+        </button>
+
+        <div class="faq-answer">
+
+            <p>
+                После сдачи предоставляю гарантийную поддержку на оговорённый срок (обычно 1–3 месяца): исправляю ошибки, возникшие по нашей вине. Дальше предлагаю пакет поддержки: мониторинг, обновления, бэкапы и оперативные правки.
+            </p>
+
+        </div>
+        
+        </div>
+
+         <div class="faq-item">
+
+        <button class="faq-question">
+           <span>Как я пойму, что сайт качественный и не “упадет” при нагрузке?</span>
+            <span>▼</span>
+        </button>
+
+        <div class="faq-answer">
+
+            <p>
+                Провожу тестирование: проверяю верстку, формы, корзину, скорость загрузки, адаптивность на разных устройствах. При необходимости делаю нагрузочное тестирование. Также настраиваю базовые метрики и мониторинг, чтобы вовремя узнавать о проблемах.
+            </p>
+
+        </div>
+
+        </div>
+
+        </div>
+
+</section>
+</main>
+<!-- Подвал сайта -->
+<footer>
+    <hr>
+<div class="footer-content">
+<h2>Краткая контактная информация:</h2>
+<a href="contacts.html">Все контакты</a>
+</div>
+</footer>
+<!-- Подключение JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

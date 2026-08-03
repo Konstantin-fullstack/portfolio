@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1E1E1E;
+    color: white;
+}
+
+header {
+    margin-bottom: 40px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #333;
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.logo:hover {
+    color: #2563eb;
+}
+
+.hero h1 {
+    font-size: clamp(32px, 5vw, 48px);
+    margin-bottom: 30px;
+}
+
+.projects h1 {
+    margin-bottom: 20px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.menu a.active {
+    color: #2563eb;
+}
+
+.menu a:hover {
+    color: #2563eb;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.button-primary {
+    background-color: #2563eb;
+    color: white;
+}
+
+.button-secondary {
+    color: #2563eb;
+    border: 2px solid #2563eb;
+}
+
+.button-primary:hover {
+    background-color: #1d4ed8;
+    box-shadow: 0 10px 25px rgba(49, 3, 233, 0.5);
+}
+
+.button-secondary:hover {
+    box-shadow: 0 10px 25px rgba(49, 3, 233, 0.5);
+    color: white;
+    background-color: #2563eb;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+}
+
+.button:active {
+    transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+    }
+
+    .menu {
+        margin-top: 20px;
+    }
+}
+
+footer {
+    margin-top: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+}
+
+.footer-content a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-content a:hover {
+    color: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+.footer-content a:active {
+ transform: translateY(0);    
+}

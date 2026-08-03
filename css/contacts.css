@@ -1,0 +1,30 @@
+.contacts {
+    display: flex;
+    gap: 20px;
+     flex-direction: column;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contacts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contacts-list a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.contacts-list a:hover {
+    color: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+.contacts-list a:active {
+ transform: translateY(0);    
+}
