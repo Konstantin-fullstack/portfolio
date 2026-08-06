@@ -79,6 +79,88 @@
         </div>
     </div>
     </section>
+
+    <!-- Кнопка открытия формы -->
+
+<button id="open-feedback-btn" class="feedback-btn"> Написать мне </button>
+
+<!-- Модальное окно формы -->
+
+<div id="feedback-modal" class="modal hidden">
+
+<div class="modal-content">
+
+  <!-- Кнопка закрытия -->
+  <span class="close-btn">&times;</span>
+
+  <h2>Форма обратной связи</h2>
+
+  <form id="feedback-form">
+
+    <label for="name">Имя</label>
+    <input
+      type="text"
+      id="name"
+      name="name"
+      required
+      placeholder="Ваше имя"
+    >
+
+    <label for="email">Email</label>
+    <input
+      type="email"
+      id="email"
+      name="email"
+      required
+      placeholder="example@mail.com"
+    >
+
+    <label for="message">Сообщение</label>
+    <textarea
+      id="message"
+      name="message"
+      rows="5"
+      required
+      placeholder="Ваш вопрос"
+    ></textarea>
+
+    <button type="submit" class="submit-btn">
+      Отправить
+    </button>
+
+  </form>
+
+</div>
+
+</div>
+
+<!-- Модальное окно «Спасибо» -->
+
+<div id="thanks-modal" class="modal hidden">
+
+<div class="modal-content modal-thanks">
+
+  <h2>Ваша заявка принята!</h2>
+
+  <p>
+    Свяжемся с Вами в ближайшее время.
+  </p>
+
+  <button id="close-thanks-btn" class="submit-btn">
+    Закрыть
+  </button>
+
+</div>
+
+</div>
+
+<!-- Подключение библиотеки EmailJS -->
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"> </script>
+
+</div>
+        </div>
+
 </main>
    <footer>
     <hr>
@@ -87,5 +169,6 @@
 <a href="index.html">Вернуться на главную</a>
 </div>
 </footer>
+<script src="js/script.js"></script>
 </body>
 </html
