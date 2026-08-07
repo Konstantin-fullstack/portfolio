@@ -172,6 +172,157 @@
 
 }
 
+/* ===========================
+   Journal Modal
+=========================== */
+
+.journal-modal{
+
+    position:fixed;
+
+    inset:0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:rgba(0,0,0,.55);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.4s;
+
+    z-index:9999;
+}
+
+.journal-modal.active{
+
+    opacity:1;
+
+    visibility:visible;
+}
+
+.journal-window{
+
+    width:min(850px,90%);
+
+    max-height:85vh;
+
+    overflow:auto;
+
+    background:#F8F5EF;
+
+    border-radius:18px;
+
+    padding:60px;
+
+    box-shadow:0 20px 60px rgba(0,0,0,.25);
+
+    position:relative;
+}
+
+.journal-close{
+
+    position:absolute;
+
+    top:20px;
+
+    right:20px;
+
+    border:none;
+
+    background:none;
+
+    font-size:2rem;
+
+    cursor:pointer;
+}
+
+.typewriter{
+
+    white-space:pre-line;
+
+    line-height:2;
+
+    font-size:1.2rem;
+}
+
+.hidden{
+
+    display:none;
+}
+
+.manifest{
+
+    margin-top:40px;
+}
+
+.manifest ul{
+
+    padding-left:20px;
+
+    line-height:2;
+}
+
+.smile{
+
+    margin-top:40px;
+
+    text-align:center;
+}
+
+.north-star{
+
+    font-size:3rem;
+
+    margin:50px auto 20px;
+
+    text-align:center;
+
+    animation:pulse 2s infinite;
+}
+
+.follow{
+
+    text-align:center;
+
+    font-family:var(--font-accent);
+
+    margin-bottom:30px;
+}
+
+@keyframes pulse{
+
+    0%{
+
+        opacity:.4;
+
+        transform:scale(.95);
+
+    }
+
+    50%{
+
+        opacity:1;
+
+        transform:scale(1.15);
+
+    }
+
+    100%{
+
+        opacity:.4;
+
+        transform:scale(.95);
+
+    }
+
+}
+
 
 
 

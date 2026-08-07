@@ -276,3 +276,69 @@ buttons.forEach(function(button) {
 
 
 });
+
+/* ==========================================
+   North Star Developer Journal
+========================================== */
+
+
+
+`Север не указывает цель.
+
+Он помогает не потерять направление.
+
+North Star Developer —
+это не про технологии.
+
+Это про человека,
+который однажды решил
+создавать полезные вещи.
+`;
+
+logo.addEventListener("click", ()=>{
+
+    modal.classList.add("active");
+
+    typewriter.textContent="";
+
+    manifest.classList.add("hidden");
+
+    let i=0;
+
+    const timer=setInterval(()=>{
+
+        typewriter.textContent+=intro[i];
+
+        i++;
+
+        if(i===intro.length){
+
+            clearInterval(timer);
+
+            setTimeout(()=>{
+
+                manifest.classList.remove("hidden");
+
+            },800);
+
+        }
+
+    },35);
+
+});
+
+closeBtn.addEventListener("click",()=>{
+
+    modal.classList.remove("active");
+
+});
+
+modal.addEventListener("click",(event)=>{
+
+    if(event.target===modal){
+
+        modal.classList.remove("active");
+
+    }
+
+});
