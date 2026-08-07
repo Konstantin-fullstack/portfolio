@@ -348,7 +348,7 @@
 /* Карточка */
 
 .faq-item {
-    background-color: #464343;
+    background-color: #D4AF37;
     border-radius: 12px;
     padding: 20px;
     margin-bottom: 20px;
@@ -384,20 +384,13 @@
 
     overflow: hidden;
 
-    opacity: 0;
-
-    margin-top: 0;
-
-    color: #d4d4d4;
-
-    line-height: 1.6;
-
     transition:
-        max-height 0.4s ease,
-        opacity 0.3s ease,
-        margin-top 0.3s ease;
-}
 
+        max-height .4s ease,
+
+        padding .3s ease;
+
+}
 /* Если карточка активна —
    показать ответ */
 
@@ -441,6 +434,6 @@
 }
 
 .faq-question:hover {
-    color: #d6b36a;
+    color: #C49B1A;
 }
 
