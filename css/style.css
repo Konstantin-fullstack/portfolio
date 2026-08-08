@@ -152,6 +152,22 @@ header {
     margin-bottom: 40px;
 }
 
+/* ==========================================
+   Active navigation link
+========================================== */
+
+.nav a.active {
+
+    color: var(--color-accent);
+
+}
+
+.nav a.active::after {
+
+    width: 100%;
+
+}
+
 hr {
     border: none;
     border-top: 1px solid #333;
@@ -380,6 +396,30 @@ a:hover{
     }
 }
 
+/* ==========================================
+   Reduced motion
+========================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    [data-animation] {
+
+        opacity: 1;
+
+        transform: none;
+
+        transition: none;
+
+    }
+
+}
+
+[data-animation] {
+
+    transition-delay: var(--animation-delay, 0s);
+
+}
+
 footer {
     margin-top: 20px;
     max-width: 1200px;
@@ -406,4 +446,54 @@ footer {
 
 .footer-content a:active {
  transform: translateY(0);    
+}
+
+/* ==========================================
+   Scroll animations
+========================================== */
+
+[data-animation] {
+
+    opacity: 0;
+
+    transform: translateY(30px);
+
+    transition:
+
+        opacity .7s ease,
+
+        transform .7s ease;
+
+}
+
+[data-animation="fade"] {
+
+    transform: none;
+
+}
+
+[data-animation="left"] {
+
+    transform: translateX(-40px);
+
+}
+
+[data-animation="right"] {
+
+    transform: translateX(40px);
+
+}
+
+[data-animation="scale"] {
+
+    transform: scale(.95);
+
+}
+
+[data-animation].is-visible {
+
+    opacity: 1;
+
+    transform: translate(0) scale(1);
+
 }
