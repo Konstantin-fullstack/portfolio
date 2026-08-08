@@ -26,29 +26,22 @@
 
 <body>
 
-<header class="header">
+<header class="site-header">
+        <div class="container">
+            <div class="header-top">
+                <button
+                    class="logo"
+                    id="logoButton"
+                    type="button"
+                    aria-label="Открыть манифест North Star Developer">
+                    ⭐ North Star Developer
+                </button>
 
-    <div class="container">
+                <p class="tagline">Learn. Build. Help. Smile. Repeat.</p>
+            </div>
 
-        <div class="header-top">
-
-            <button id="logoButton" class="logo">
-
-                ⭐ North Star Developer
-
-            </button>
-
-            <p class="tagline">
-
-                Учись • Создавай • Помогай • Улыбайся • Повторяй
-
-            </p>
-
-        </div>
-
-        <nav>
-
-            <ul class="nav">
+            <nav class="nav" aria-label="Основная навигация">
+               <ul class="nav">
 
                 <li><a href="index.html">Главная запись</a></li>
 
@@ -61,12 +54,9 @@
                 <li><a href="contacts.html">Следующая остановка</a></li>
 
             </ul>
-
-        </nav>
-
-    </div>
-
-</header>
+            </nav>
+        </div>
+    </header>
 
 <main>
 
@@ -404,13 +394,11 @@
 
 </main>
 <!-- Подвал сайта -->
-<footer>
-    <hr>
-<div class="footer-content">
-<h2>Краткая контактная информация:</h2>
-<a href="contacts.html">Все контакты</a>
-</div>
-</footer>
+<footer class="site-footer">
+        <div class="container footer-content">
+            <p>© 2026 North Star Developer</p>
+        </div>
+    </footer>
 
 <div id="journal-modal" class="journal-modal">
 
@@ -487,9 +475,7 @@
 
     </div>
 
-</div>
-
-<!-- Подключение JavaScript -->
+</section><!-- Подключение JavaScript -->
 <script src="js/navigation.js"></script>
 <script src="js/faq.js"></script>
 <script src="js/email.js"></script>

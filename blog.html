@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Мои заметки — North Star Developer</title>
+    
+<link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/faq.css">
+    <link rel="stylesheet" href="css/blog.css">
+
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="site-header">
+
+        <div class="header-container">
+
+            <a href="index.html" class="logo">
+                ⭐ North Star Developer
+            </a>
+
+            <nav class="menu" aria-label="Основная навигация">
+
+                <a href="index.html">
+                    Главная
+                </a>
+
+                <a href="projects.html">
+                    Проекты
+                </a>
+
+                <a href="blog.html" class="active">
+                    Заметки
+                </a>
+
+                <a href="contacts.html">
+                    Контакты
+                </a>
+
+            </nav>
+
+        </div>
+
+        <hr>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+        <!-- HERO -->
+
+        <section class="blog-hero">
+
+            <div class="blog-hero-content">
+
+                <p class="eyebrow">
+                    📖 Мои заметки
+                </p>
+
+                <h1>
+                    Дневник разработчика
+                </h1>
+
+                <p class="blog-intro">
+                    Здесь я записываю то, что узнал,
+                    сломал, починил и понял по дороге.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FILTERS ================= -->
+
+        <section class="blog-navigation">
+
+            <nav class="blog-filters" aria-label="Фильтр записей">
+
+                <button
+                    class="blog-filter active"
+                    data-category="all">
+                    Все записи
+                </button>
+
+                <button
+                    class="blog-filter"
+                    data-category="javascript">
+                    JavaScript
+                </button>
+
+                <button
+                    class="blog-filter"
+                    data-category="html-css">
+                    HTML & CSS
+                </button>
+
+                <button
+                    class="blog-filter"
+                    data-category="git">
+                    Git
+                </button>
+
+                <button
+                    class="blog-filter"
+                    data-category="projects">
+                    Проекты
+                </button>
+
+                <button
+                    class="blog-filter"
+                    data-category="thoughts">
+                    Мысли
+                </button>
+
+            </nav>
+
+        </section>
+
+
+        <!-- ================= ARTICLES ================= -->
+
+        <section class="blog">
+
+            <div class="blog-container">
+
+                <div
+                    class="articles-list"
+                    id="articles-list">
+
+                    <!--
+                        Статьи будут добавляться
+                        через JavaScript.
+                    -->
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <hr>
+
+        <div class="footer-content">
+
+            <p>
+                Север не указывает цель.
+                Он помогает не потерять направление.
+            </p>
+
+            <a href="contacts.html">
+                Следующая остановка →
+            </a>
+
+            <p>
+                North Star Developer © 2026
+            </p>
+
+            <p>
+                Создано с целью. Сделано с улыбкой.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="js/navigation.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/blog.js"></script>
+
+</body>
+
+</html>
