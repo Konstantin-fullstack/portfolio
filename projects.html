@@ -1,206 +1,531 @@
 <!DOCTYPE html>
+
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Проекты - Константин Мордасов</title>
 
-    <link rel="stylesheet" href="css/variables.css">
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/hero.css">
-    <link rel="stylesheet" href="css/pages/projects.css">
+```
+<title>Записи из мастерской — North Star Developer</title>
+
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/hero.css">
+<link rel="stylesheet" href="css/pages/projects.css">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
-
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet"> 
+<link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&family=Merriweather:wght@300;400;700&display=swap"
+    rel="stylesheet">
+```
+
 </head>
 
 <body>
 
-    <header class="site-header">
-        <div class="container">
-            <div class="header-top">
-                <button
-                    class="logo"
-                    id="logoButton"
-                    type="button"
-                    aria-label="Открыть манифест North Star Developer">
-                    ⭐ North Star Developer
-                </button>
+```
+<!-- ================= HEADER ================= -->
 
-                <p class="tagline">Учись • Создавай • Помогай • Улыбайся • Повторяй</p>
-            </div>
+<header class="site-header">
 
-            <nav class="nav" aria-label="Основная навигация">
+    <div class="container">
+
+        <div class="header-top">
+
+            <button
+                class="logo"
+                id="logoButton"
+                type="button"
+                aria-label="Открыть манифест North Star Developer">
+                ⭐ North Star Developer
+            </button>
+
+            <p class="tagline">
+                Учись • Создавай • Помогай • Улыбайся • Повторяй
+            </p>
+
+        </div>
+
+        <nav class="nav" aria-label="Основная навигация">
 
             <ul class="nav">
 
-                <li><a href="index.html">Главная запись</a></li>
+                <li>
+                    <a href="index.html">
+                        Главная запись
+                    </a>
+                </li>
 
-                <li><a href="projects.html">Записи из мастерской</a></li>
+                <li>
+                    <a href="projects.html">
+                        Записи из мастерской
+                    </a>
+                </li>
 
-                <li><a href="about_me.html">Обо мне</a></li>
+                <li>
+                    <a href="about_me.html">
+                        Обо мне
+                    </a>
+                </li>
 
-                <li><a href="why_north_star.html">Почему North Star?</a></li>
+                <li>
+                    <a href="why_north_star.html">
+                        Почему North Star?
+                    </a>
+                </li>
 
-                <li><a href="contacts.html">Следующая остановка</a></li>
+                <li>
+                    <a href="contacts.html">
+                        Следующая остановка
+                    </a>
+                </li>
 
-                <!-- <li><a href="blog.html">мои заметки</a></li> -->
+                <!--
+                <li>
+                    <a href="blog.html">
+                        Мои заметки
+                    </a>
+                </li>
+                -->
 
             </ul>
-            </nav>
-        </div>
-    </header>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<!-- ================= MAIN ================= -->
 
 <main>
-    <section class="projects">
-    <h1>Мои проекты</h1>
 
-    <div class="projects-grid">
-        <article class="project-card">
-            <img src="images/FAQ.png" alt="FAQ на JavaScript" loading="lazy" decoding="async">
-            
-    <div class="project-card-content">
+    <section class="workshop">
 
-        <h3>FAQ на JavaScript</h3>
+        <header class="workshop-header">
 
-        <p>
-            Краткое описание проекта.
-        </p>
+            <p class="workshop-label">
+                📖 Записи из мастерской
+            </p>
 
-        <div class="project-tags">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-        </div>
+            <h1>
+                Здесь рождаются проекты
+            </h1>
 
-        <a href="index.html#faq_in_js">
-            Посмотреть проект
-        </a>
+            <p class="workshop-intro">
+                Не коллекция красивых карточек.
+                Не витрина технологий.
+                А несколько реальных задач, которые однажды
+                пришлось решить с помощью кода.
+            </p>
 
-    </div>
+        </header>
+
+
+        <!-- ================= ENTRY 07 ================= -->
+
+        <article class="workshop-entry">
+
+            <div class="entry-header">
+
+                <div>
+
+                    <p class="entry-number">
+                        Запись №7
+                    </p>
+
+                    <h2>
+                        FAQ на JavaScript
+                    </h2>
+
+                </div>
+
+                <time datetime="2026">
+                    2026
+                </time>
+
+            </div>
+
+
+            <div class="entry-content">
+
+                <div class="entry-story">
+
+                    <p class="entry-lead">
+                        Когда-то нужно было просто сделать
+                        раскрывающийся ответ.
+                        Конечно, всё оказалось немного интереснее.
+                    </p>
+
+                    <p>
+                        На первый взгляд FAQ — вещь элементарная.
+                        Есть вопрос. Есть ответ.
+                        Нажал на вопрос — ответ появился.
+                    </p>
+
+                    <p>
+                        Что может пойти не так?
+                    </p>
+
+                    <p>
+                        Ну... почти всё.
+                    </p>
+
+                    <p>
+                        Этот проект стал хорошей практикой работы
+                        с DOM и событиями JavaScript. Нужно было
+                        научиться находить нужный элемент,
+                        реагировать на клик, менять состояние блока
+                        и при этом не превращать страницу в склад
+                        открытых ответов.
+                    </p>
+
+                    <p>
+                        В результате получился аккуратный FAQ,
+                        где пользователь открывает нужный вопрос,
+                        а интерфейс плавно реагирует на его действие.
+                    </p>
+
+                </div>
+
+
+                <div class="entry-details">
+
+                    <section class="entry-section">
+
+                        <h3>
+                            Задача
+                        </h3>
+
+                        <p>
+                            Создать интерактивный блок вопросов
+                            и ответов, который будет понятен
+                            пользователю и удобен в использовании.
+                        </p>
+
+                    </section>
+
+
+                    <section class="entry-section">
+
+                        <h3>
+                            Решение
+                        </h3>
+
+                        <p>
+                            Использовать JavaScript для обработки
+                            кликов, управления классами и изменения
+                            состояния элементов интерфейса.
+                        </p>
+
+                    </section>
+
+
+                    <section class="entry-section">
+
+                        <h3>
+                            Чему научился
+                        </h3>
+
+                        <ul>
+                            <li>Работать с DOM</li>
+                            <li>Находить элементы страницы</li>
+                            <li>Обрабатывать события</li>
+                            <li>Использовать <code>addEventListener</code></li>
+                            <li>Управлять CSS-классами через JavaScript</li>
+                            <li>Связывать JavaScript, HTML и CSS</li>
+                        </ul>
+
+                    </section>
+
+                </div>
+
+            </div>
+
+
+            <footer class="entry-footer">
+
+                <div class="project-tags">
+
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+
+                </div>
+
+                <div class="entry-links">
+
+                    <a
+                        href="https://example.com/github/faq"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        GitHub →
+                    </a>
+
+                    <a
+                        href="https://example.com/demo/faq"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        Demo →
+                    </a>
+
+                </div>
+
+            </footer>
+
         </article>
 
-         <article class="project-card">
-            <img src="images/FAQ.png" alt="FAQ на JavaScript" loading="lazy" decoding="async">
-            
-    <div class="project-card-content">
 
-        <h3>FAQ на JavaScript</h3>
+        <!-- ================= ENTRY 08 ================= -->
 
-        <p>
-            Краткое описание проекта.
-        </p>
+        <article class="workshop-entry">
 
-        <div class="project-tags">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-        </div>
+            <div class="entry-header">
 
-        <a href="index.html#faq_in_js">
-            Посмотреть проект
-        </a>
+                <div>
 
-    </div>
+                    <p class="entry-number">
+                        Запись №8
+                    </p>
+
+                    <h2>
+                        Форма обратной связи
+                    </h2>
+
+                </div>
+
+                <time datetime="2026">
+                    2026
+                </time>
+
+            </div>
+
+
+            <div class="entry-content">
+
+                <div class="entry-story">
+
+                    <p class="entry-lead">
+                        Проект, который должен был просто
+                        отправлять сообщение.
+                        А потом появился EmailJS.
+                    </p>
+
+                    <p>
+                        Форма обратной связи — один из тех элементов
+                        сайта, на которые обычно никто не обращает
+                        внимания.
+                    </p>
+
+                    <p>
+                        Пока она работает.
+                    </p>
+
+                    <p>
+                        Пользователь вводит имя, оставляет email,
+                        пишет сообщение и нажимает кнопку.
+                    </p>
+
+                    <p>
+                        А дальше начинается самое интересное:
+                        сообщение должно каким-то образом добраться
+                        до человека по ту сторону сайта.
+                    </p>
+
+                    <p>
+                        Здесь появилась практика работы с EmailJS.
+                        Задача была вполне конкретной: сделать форму,
+                        которая действительно отправляет сообщение,
+                        а не просто красиво выглядит и после нажатия
+                        на кнопку делает вид, что всё произошло.
+                    </p>
+
+                </div>
+
+
+                <div class="entry-details">
+
+                    <section class="entry-section">
+
+                        <h3>
+                            Задача
+                        </h3>
+
+                        <p>
+                            Создать рабочую форму обратной связи,
+                            которая позволяет пользователю отправить
+                            сообщение непосредственно с сайта.
+                        </p>
+
+                    </section>
+
+
+                    <section class="entry-section">
+
+                        <h3>
+                            Решение
+                        </h3>
+
+                        <p>
+                            Использовать JavaScript для обработки
+                            формы и EmailJS для передачи сообщения
+                            на электронную почту.
+                        </p>
+
+                    </section>
+
+
+                    <section class="entry-section">
+
+                        <h3>
+                            Чему научился
+                        </h3>
+
+                        <ul>
+                            <li>Работать с HTML-формами</li>
+                            <li>Обрабатывать события формы</li>
+                            <li>Получать данные из полей</li>
+                            <li>Работать с EmailJS</li>
+                            <li>Обрабатывать успешную отправку</li>
+                            <li>Обрабатывать ошибки</li>
+                        </ul>
+
+                    </section>
+
+                </div>
+
+            </div>
+
+
+            <footer class="entry-footer">
+
+                <div class="project-tags">
+
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>EmailJS</span>
+
+                </div>
+
+                <div class="entry-links">
+
+                    <a
+                        href="https://example.com/github/contact-form"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        GitHub →
+                    </a>
+
+                    <a
+                        href="https://example.com/demo/contact-form"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        Demo →
+                    </a>
+
+                </div>
+
+            </footer>
+
         </article>
 
 
-        <article class="project-card">
-            <img src="images/Vremennoe_izobrajenie_proecta.png" alt="Главная страница сайта лендинга" loading="lazy" decoding="async">
-            
-    <div class="project-card-content">
+        <!-- ================= WORKSHOP NOTE ================= -->
 
-        <h3>Название проекта</h3>
+        <aside class="workshop-note">
 
-        <p>
-            Краткое описание проекта.
-        </p>
+            <p class="note-mark">
+                ✦
+            </p>
 
-        <div class="project-tags">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-        </div>
+            <p>
+                Эти проекты не претендуют на звание великих
+                технологических открытий.
+            </p>
 
-        <!-- <a href="#">
-            Посмотреть проект
-        </a> -->
-        <span>Проект находится на разработке</span>
+            <p>
+                И в этом как раз их смысл.
+            </p>
 
-    </div>
-        </article>
+            <p>
+                Большой путь разработчика состоит не только
+                из сложных приложений и впечатляющих технологий.
+            </p>
 
-        <article class="project-card">
-            <img src="images/Vremennoe_izobrajenie_proecta.png" alt="Главная страница проекта 1 ..." loading="lazy" decoding="async">
-            
-    <div class="project-card-content">
+            <p class="note-highlight">
+                Он состоит из маленьких задач.
+            </p>
 
-        <h3>Название проекта</h3>
+            <p>
+                Одна кнопка.
+                Один обработчик события.
+                Одна форма.
+                Один баг, который почему-то существует
+                только по вторникам.
+            </p>
 
-        <p>
-            Краткое описание проекта.
-        </p>
+            <p>
+                А потом однажды оглядываешься назад и понимаешь:
+            </p>
 
-        <div class="project-tags">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-        </div>
+            <p class="note-highlight">
+                из этих маленьких задач и сложился путь.
+            </p>
 
-        <!-- <a href="#">
-            Посмотреть проект
-        </a> -->
-        <span>Проект находится на разработке</span>
+        </aside>
 
-    </div>
-        </article>
-    </div>
-</section>
+    </section>
+
 </main>
 
 
-    <!-- ================= FOOTER ================= -->
+<!-- ================= FOOTER ================= -->
 
-    <footer>
+<footer>
 
-        <hr>
+    <hr>
 
-        <div class="footer-content">
+    <div class="footer-content">
 
-            <p>
-                Север не указывает цель.
-                Он помогает не потерять направление.
-            </p>
+        <p>
+            Север не указывает цель.
+            Он помогает не потерять направление.
+        </p>
 
-            <a href="contacts.html">
-                Следующая остановка →
-            </a>
+        <a href="contacts.html">
+            Следующая остановка →
+        </a>
 
-            <p>
-                North Star Developer © 2026
-            </p>
+        <p>
+            North Star Developer © 2026
+        </p>
 
-            <p>
-                Создано с целью. Сделано с улыбкой.
-            </p>
+        <p>
+            Создано с целью. Сделано с улыбкой.
+        </p>
 
-        </div>
+    </div>
 
-    </footer>
+</footer>
 
-    <!-- Подключение JavaScript -->
+
+<!-- ================= JAVASCRIPT ================= -->
+
 <script src="js/navigation.js"></script>
 <script src="js/faq.js"></script>
 <script src="js/email.js"></script>
 <script src="js/journal.js"></script>
 <script src="js/animations.js"></script>
 <script src="js/main.js"></script>
+```
 
 </body>
-</html>
 
+</html>
