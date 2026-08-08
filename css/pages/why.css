@@ -1,0 +1,453 @@
+/* =========================================================
+   WHY NORTH STAR — PAGE
+   Атмосфера личного дневника без декоративности ради декора
+========================================================= */
+
+:root {
+    --paper: #f6f1e7;
+    --paper-light: #faf7f0;
+    --ink: #292824;
+    --muted: #706b61;
+    --line: #d8d0c2;
+    --star: #b38a42;
+    --star-soft: rgba(179, 138, 66, 0.14);
+}
+
+.why-page {
+    min-height: 100vh;
+    background:
+        radial-gradient(circle at 15% 10%, rgba(255,255,255,.65), transparent 28%),
+        radial-gradient(circle at 85% 80%, rgba(220,210,190,.18), transparent 30%),
+        var(--paper);
+    color: var(--ink);
+    font-family: "Merriweather", Georgia, serif;
+}
+
+.why-page .site-header {
+    margin-bottom: 0;
+}
+
+.why-page .header-container {
+    max-width: 1180px;
+    padding: 24px 32px;
+}
+
+.why-page .logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--ink);
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.why-page .logo:hover {
+    color: var(--ink);
+}
+
+.logo-star {
+    color: var(--star);
+    font-size: 24px;
+    line-height: 1;
+}
+
+.why-page .menu {
+    gap: 26px;
+}
+
+.why-page .menu a {
+    color: var(--muted);
+    font-family: "Merriweather", Georgia, serif;
+    font-size: 14px;
+}
+
+.why-page .menu a:hover,
+.why-page .menu a.active {
+    color: var(--star);
+}
+
+.why-page header hr,
+.why-page .site-footer hr {
+    border-top-color: var(--line);
+}
+
+.north-star-entry {
+    width: min(820px, calc(100% - 40px));
+    margin: 0 auto;
+    padding: 82px 0 30px;
+}
+
+.entry-header {
+    text-align: center;
+}
+
+.entry-number,
+.entry-date,
+.section-kicker,
+.footer-signature {
+    font-family: "Libre Baskerville", Georgia, serif;
+    color: var(--muted);
+}
+
+.entry-number {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.entry-date {
+    margin-bottom: 24px;
+    font-size: 12px;
+}
+
+.entry-header h1,
+.entry-section h2 {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-weight: 600;
+    color: var(--ink);
+}
+
+.entry-header h1 {
+    margin-bottom: 28px;
+    font-size: clamp(52px, 8vw, 82px);
+    line-height: .92;
+}
+
+.entry-lead {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #555148;
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+.entry-divider {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin: 64px 0 54px;
+    color: var(--star);
+}
+
+.entry-divider::before,
+.entry-divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: var(--line);
+}
+
+.entry-divider span {
+    font-size: 18px;
+}
+
+.entry-section {
+    margin-bottom: 84px;
+}
+
+.entry-section p,
+.entry-section li {
+    font-size: 17px;
+    line-height: 2;
+}
+
+.entry-section p + p {
+    margin-top: 24px;
+}
+
+.section-kicker {
+    margin-bottom: 10px;
+    font-size: 12px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+
+.entry-section h2 {
+    margin-bottom: 30px;
+    font-size: clamp(38px, 5vw, 52px);
+    line-height: 1;
+}
+
+blockquote {
+    margin: 42px 0;
+    padding: 8px 0 8px 28px;
+    border-left: 2px solid var(--star);
+    color: #4f4a41;
+    font-family: "Libre Baskerville", Georgia, serif;
+    font-size: 17px;
+    font-style: italic;
+    line-height: 2;
+}
+
+.large-quote {
+    padding: 20px 0 20px 30px;
+    font-size: clamp(21px, 3vw, 28px);
+    line-height: 1.8;
+}
+
+.tech-line {
+    margin: 34px 0 !important;
+    padding: 18px 20px;
+    border: 1px solid var(--line);
+    background: rgba(255,255,255,.28);
+    color: var(--muted);
+    font-family: "Libre Baskerville", Georgia, serif;
+    font-size: 14px !important;
+    line-height: 1.8 !important;
+    text-align: center;
+}
+
+.thought-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    margin: 36px 0;
+}
+
+.thought-grid p {
+    margin: 0 !important;
+    padding: 22px;
+    background: var(--paper-light);
+    border: 1px solid var(--line);
+    font-family: "Libre Baskerville", Georgia, serif;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.questions-list {
+    margin: 28px 0 0;
+    padding-left: 24px;
+}
+
+.questions-list li + li {
+    margin-top: 10px;
+}
+
+.principle-section {
+    position: relative;
+}
+
+.principle-line {
+    margin: 40px 0 !important;
+    padding: 28px;
+    background: var(--star-soft);
+    border-left: 3px solid var(--star);
+    font-family: "Libre Baskerville", Georgia, serif;
+    font-size: 18px !important;
+    line-height: 1.8 !important;
+}
+
+.path-line {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin: 40px 0;
+    padding: 24px 12px;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    font-family: "Libre Baskerville", Georgia, serif;
+    font-size: 13px;
+}
+
+.path-line i {
+    color: var(--star);
+    font-style: normal;
+}
+
+.accent-thought {
+    margin-top: 42px !important;
+    color: var(--star) !important;
+    font-family: "Libre Baskerville", Georgia, serif;
+    font-size: 18px !important;
+    font-style: italic;
+}
+
+.north-section {
+    margin-bottom: 100px;
+}
+
+.motto {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 34px 0;
+    padding: 28px 30px;
+    border: 1px solid var(--line);
+    background: rgba(255,255,255,.25);
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 31px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.motto span:nth-child(3) {
+    color: var(--star);
+}
+
+.final-section {
+    margin-bottom: 60px;
+}
+
+.humor-quote {
+    text-align: center;
+    border-left: 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    padding: 24px 0;
+}
+
+.final-line {
+    margin-top: 42px !important;
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 34px !important;
+    font-weight: 600;
+    text-align: center;
+}
+
+.entry-footer {
+    padding: 70px 20px 85px;
+    border-top: 1px solid var(--line);
+    text-align: center;
+}
+
+.star-mark {
+    margin-bottom: 18px;
+    color: var(--star);
+    font-size: 38px;
+    animation: star-glow 3.5s ease-in-out infinite;
+}
+
+.star-message {
+    margin: 0 0 14px;
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: clamp(30px, 5vw, 44px);
+    font-weight: 600;
+}
+
+.star-note {
+    margin: 0 0 30px;
+    color: var(--muted);
+    font-family: "Libre Baskerville", Georgia, serif;
+    font-size: 13px;
+    line-height: 1.9;
+}
+
+.entry-button {
+    display: inline-block;
+    padding: 13px 24px;
+    border: 1px solid var(--ink);
+    color: var(--ink);
+    font-family: "Merriweather", Georgia, serif;
+    font-size: 14px;
+    text-decoration: none;
+    transition: transform .25s ease, background-color .25s ease, color .25s ease;
+}
+
+.entry-button:hover {
+    background: var(--ink);
+    color: var(--paper);
+    transform: translateY(-2px);
+}
+
+.site-footer {
+    max-width: 1180px;
+    margin: 0 auto;
+    color: var(--muted);
+}
+
+.why-page .footer-content {
+    align-items: center;
+    padding: 34px 20px 40px;
+    gap: 14px;
+    text-align: center;
+}
+
+.why-page .footer-content p,
+.why-page .footer-content a {
+    font-family: "Libre Baskerville", Georgia, serif;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+.why-page .footer-content a {
+    color: var(--ink);
+    text-decoration: none;
+}
+
+.why-page .footer-content a:hover {
+    color: var(--star);
+}
+
+.footer-signature {
+    opacity: .8;
+}
+
+@keyframes star-glow {
+    0%, 100% { opacity: .65; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.12); }
+}
+
+@media (max-width: 768px) {
+    .why-page .header-container {
+        padding: 20px;
+    }
+
+    .why-page .logo {
+        font-size: 24px;
+    }
+
+    .why-page .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px 18px;
+        margin-top: 18px;
+    }
+
+    .north-star-entry {
+        width: min(100% - 28px, 820px);
+        padding-top: 55px;
+    }
+
+    .entry-header h1 {
+        font-size: 54px;
+    }
+
+    .entry-lead,
+    .entry-section p,
+    .entry-section li {
+        font-size: 15px;
+        line-height: 1.9;
+    }
+
+    .entry-section {
+        margin-bottom: 64px;
+    }
+
+    .thought-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .path-line {
+        flex-direction: column;
+    }
+
+    .path-line i {
+        transform: rotate(90deg);
+    }
+
+    .motto {
+        font-size: 27px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .star-mark {
+        animation: none;
+    }
+
+    .entry-button {
+        transition: none;
+    }
+}

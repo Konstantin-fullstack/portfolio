@@ -1,49 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta
-  name="description"
-  content="Portfolio of Konstantin — Frontend Developer. HTML, CSS, JavaScript.">
-    <title>Главная - North Star Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Почему появился North Star Developer — философия, принципы и путь разработчика Константина.">
+    <title>Почему North Star? — North Star Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/hero.css">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/faq.css">
+    <link rel="stylesheet" href="css/pages/why.css">
 </head>
+<body class="why-page">
 
-<body>
-<header class="header">
+<header class="site-header">
+        <div class="container">
+            <div class="header-top">
+                <button
+                    class="logo"
+                    id="logoButton"
+                    type="button"
+                    aria-label="Открыть манифест North Star Developer">
+                    ⭐ North Star Developer
+                </button>
 
-    <div class="container">
+                <p class="tagline">Учись • Создавай • Помогай • Улыбайся • Повторяй</p>
+            </div>
 
-        <div class="header-top">
+            <nav class="nav" aria-label="Основная навигация">
 
-            <button id="logoButton" class="logo">
-
-                ⭐ North Star Developer
-
-            </button>
-
-            <p class="tagline">
-
-                Учись • Создавай • Помогай • Улыбайся • Повторяй
-
-            </p>
-
-        </div>
-
-        <nav>
-
-           <ul class="nav">
+            <ul class="nav">
 
                 <li><a href="index.html">Главная запись</a></li>
 
@@ -55,18 +47,222 @@
 
                 <li><a href="contacts.html">Следующая остановка</a></li>
 
-                <li><a href="blog.html">мои заметки</a></li>
+                <!-- <li><a href="blog.html">мои заметки</a></li> -->
 
             </ul>
+            </nav>
+        </div>
+    </header>
 
-        </nav>
+<main>
+    <article class="north-star-entry">
+        <header class="entry-header">
+            <p class="entry-number">📖 Запись №2</p>
+            <p class="entry-date">08 августа 2026</p>
+            <h1>Почему North Star?</h1>
+            <p class="entry-lead">
+                Не название ради названия. Не красивый образ ради красивого образа.
+                North Star — это ориентир, который помогает не потерять направление,
+                когда вокруг слишком много технологий, ошибок и новых дорог.
+            </p>
+        </header>
 
-    </div>
+        <div class="entry-divider" aria-hidden="true"><span>✦</span></div>
 
-</header>
+        <section class="entry-section">
+            <p>
+                Есть вещи, которые появляются не потому, что их долго планировали.
+                Иногда ты просто идёшь куда-то, ошибаешься, сворачиваешь не туда,
+                снова возвращаешься на дорогу — и однажды понимаешь, что тебе нужен ориентир.
+            </p>
+            <p>
+                Для моряков таким ориентиром веками была Полярная звезда.
+            </p>
+            <blockquote>
+                Она не показывала, куда именно нужно плыть.<br>
+                Она просто помогала понять, где север.
+            </blockquote>
+            <p>Мне понравилась эта идея.</p>
+            <p>
+                Потому что разработка — примерно такая же история.
+            </p>
+        </section>
 
+        <section class="entry-section">
+            <p class="section-kicker">01 — Ориентир</p>
+            <h2>Почему именно Полярная звезда?</h2>
+            <p>
+                Когда начинаешь учиться программированию, вокруг слишком много всего.
+            </p>
+            <p class="tech-line">
+                HTML · CSS · JavaScript · Git · React · Python · фреймворки · библиотеки · курсы · книги · видео · туториалы
+            </p>
+            <p>
+                А потом появляется ещё один туториал, который обещает научить тебя всему за 47 минут.
+                И ты начинаешь подозревать, что где-то свернул не туда.
+            </p>
+            <p>
+                Проблема не в количестве технологий. Проблема в том, что легко потерять направление.
+                Можно бесконечно изучать новые инструменты и при этом так и не начать создавать что-то настоящее.
+            </p>
+            <p>
+                Поэтому North Star для меня — не технология и не конечная точка.
+                Это напоминание о том, зачем я вообще начал этот путь.
+            </p>
+        </section>
 
-    <!-- ================= FOOTER ================= -->
+        <section class="entry-section">
+            <p class="section-kicker">02 — Не просто портфолио</p>
+            <h2>Почему не просто портфолио?</h2>
+            <p>
+                Потому что мне недостаточно показать список технологий.
+            </p>
+            <p>
+                Можно написать: <strong>HTML · CSS · JavaScript · Git · Python</strong>.
+                И формально всё будет правильно. Но за этими словами ничего не видно.
+            </p>
+            <div class="thought-grid">
+                <p>Не видно человека.</p>
+                <p>Не видно ошибок.</p>
+                <p>Не видно маленьких побед.</p>
+                <p>Не видно вопросов.</p>
+            </div>
+            <p>
+                Поэтому North Star Developer — это не просто портфолио.
+                Это дневник профессионального пути.
+            </p>
+        </section>
+
+        <section class="entry-section">
+            <p class="section-kicker">03 — Принцип</p>
+            <h2>Во что я верю?</h2>
+            <blockquote class="large-quote">
+                Технологии существуют ради людей.<br>
+                Не наоборот.
+            </blockquote>
+            <p>
+                Можно написать красивый код, использовать модный стек и поставить десять современных библиотек.
+                Но если результат никому не нужен — всё это остаётся очень красивым способом потратить время.
+            </p>
+            <p>Поэтому я стараюсь задавать себе несколько простых вопросов:</p>
+            <ul class="questions-list">
+                <li>Какую проблему решает этот проект?</li>
+                <li>Помогает ли он кому-нибудь?</li>
+                <li>Чему он меня научил?</li>
+                <li>Стал ли я после него немного лучше как разработчик?</li>
+            </ul>
+        </section>
+
+        <section class="entry-section principle-section">
+            <p class="section-kicker">04 — Путь</p>
+            <h2>Не коллекционировать технологии</h2>
+            <p>
+                Мне не хочется превращать обучение в коллекционирование сертификатов, курсов и названий технологий.
+                Я хочу уметь создавать.
+            </p>
+            <p class="principle-line">Не изучай технологии ради технологий.<br><strong>Решай задачи.</strong></p>
+            <div class="path-line" aria-label="Принцип обучения">
+                <span>Не знать</span><i>→</i><span>Попробовать</span><i>→</i><span>Ошибиться</span><i>→</i><span>Разобраться</span><i>→</i><span>Сделать</span>
+            </div>
+            <p>
+                Иногда сработает. Иногда сломается. Иногда сломается настолько красиво, что остаётся только смотреть
+                на экран и спрашивать: «Что я вообще сделал?»
+            </p>
+            <p>Но именно в такие моменты обычно и происходит настоящее обучение.</p>
+        </section>
+
+        <section class="entry-section">
+            <p class="section-kicker">05 — Ошибки</p>
+            <h2>Почему здесь так много про ошибки?</h2>
+            <p>
+                Потому что ошибки — часть пути.
+            </p>
+            <p>
+                Разработка без ошибок примерно как программирование без багов.
+                То есть в теории существует. Где-то. Наверное.
+            </p>
+            <p>
+                Ошибка — не доказательство того, что ты плохой разработчик. Это информация.
+                Она говорит: «Вот здесь что-то пошло не так. Давай разберёмся почему».
+            </p>
+            <blockquote>
+                Ошибки здесь не прячутся.<br>
+                Они становятся частью истории.
+            </blockquote>
+        </section>
+
+        <section class="entry-section smile-section">
+            <p class="section-kicker">06 — Улыбка</p>
+            <h2>Почему улыбка?</h2>
+            <p>
+                Потому что программирование — серьёзная профессия.
+                Но это не значит, что заниматься им нужно с лицом человека, который только что получил повестку в налоговую.
+            </p>
+            <p>
+                Можно серьёзно относиться к работе и при этом оставаться человеком.
+                Можно ошибаться. Можно уставать. Можно не понимать. Можно начать сначала.
+            </p>
+            <p>
+                И иногда просто посмеяться над очередным багом, который ты сам же и создал.
+            </p>
+            <p class="accent-thought">Чувство юмора не мешает профессионализму.<br>Иногда оно помогает его сохранить.</p>
+        </section>
+
+        <section class="entry-section north-section">
+            <p class="section-kicker">07 — Направление</p>
+            <h2>Север не указывает цель</h2>
+            <p>
+                У каждого свой путь. Я не знаю, где окажусь через несколько лет.
+                И, честно говоря, думаю, что это нормально.
+            </p>
+            <p>
+                North Star не должна говорить: «Вот твоя конечная точка».
+            </p>
+            <blockquote class="large-quote">
+                Она говорит другое:<br>
+                «Вот направление. Не потеряй его».
+            </blockquote>
+            <p>
+                Для меня это направление выглядит так:
+            </p>
+            <div class="motto">
+                <span>Учиться.</span>
+                <span>Создавать.</span>
+                <span>Помогать.</span>
+                <span>Улыбаться.</span>
+                <span>Повторять.</span>
+            </div>
+        </section>
+
+        <section class="entry-section final-section">
+            <p class="section-kicker">08 — Мой ориентир</p>
+            <h2>Не потерять смысл пути</h2>
+            <p>
+                North Star Developer — это попытка сохранить сам смысл пути.
+            </p>
+            <p>
+                Не гнаться за каждой новой технологией. Не бояться начинать сначала.
+                Не стесняться ошибок. Не забывать, зачем всё это началось.
+                Беречь время. Беречь себя. Помогать людям. И продолжать двигаться вперёд.
+            </p>
+            <p>
+                Пусть иногда медленно. Пусть иногда с остановками.
+                Пусть иногда с фразой:
+            </p>
+            <blockquote class="humor-quote">«Ну и кто написал этот код?.. А. Я».</blockquote>
+            <p class="final-line">Главное — не потерять направление.</p>
+        </section>
+
+        <footer class="entry-footer">
+            <div class="star-mark" aria-hidden="true">✦</div>
+            <p class="star-message">Следуй за своей Полярной звездой.</p>
+            <p class="star-note">И если однажды станет трудно — просто посмотри на неё.<br>Она никуда не исчезла.</p>
+            <a href="projects.html" class="entry-button">Продолжить путь →</a>
+        </footer>
+    </article>
+</main>
+
+ <!-- ================= FOOTER ================= -->
 
     <footer>
 
@@ -94,7 +290,7 @@
         </div>
 
     </footer>
-   
+
 <!-- Подключение JavaScript -->
 <script src="js/navigation.js"></script>
 <script src="js/faq.js"></script>
