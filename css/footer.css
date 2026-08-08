@@ -1,0 +1,36 @@
+/* ==========================================
+   Footer
+========================================== */
+
+footer {
+    width: var(--content-width);
+    margin: 20px auto 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    padding: 20px 0;
+}
+
+.footer-content h2 {
+    margin-bottom: 0;
+}
+
+.footer-content a {
+    display: inline-block;
+
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    color: var(--color-accent);
+    transform: translateY(-2px);
+}
+
+.footer-content a:active {
+    transform: translateY(0);
+}

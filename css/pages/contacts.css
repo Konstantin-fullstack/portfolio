@@ -1,0 +1,39 @@
+/* ==========================================
+   Contacts page
+========================================== */
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.contacts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contacts-list a {
+    display: inline-block;
+
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+.contacts-list a:hover {
+    color: var(--color-accent);
+    transform: translateY(-2px);
+}
+
+.contacts-list a:active {
+    transform: translateY(0);
+}
+
+#open-feedback-btn {
+    margin: 0 20px 40px;
+}

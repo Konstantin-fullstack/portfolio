@@ -1,0 +1,217 @@
+/* ==========================================
+   Home page
+========================================== */
+
+/* Latest posts */
+
+.latest-posts {
+    padding: 100px 0;
+}
+
+.section-subtitle {
+    margin-bottom: 12px;
+
+    color: var(--color-accent);
+
+    font-family: var(--font-accent);
+    text-align: center;
+}
+
+.latest-posts h2 {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 32px;
+}
+
+.post-card {
+    padding: 32px;
+
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+
+    box-shadow: var(--shadow);
+
+    transition: var(--transition);
+}
+
+.post-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, .12);
+}
+
+.post-number {
+    display: inline-block;
+    margin-bottom: 16px;
+
+    color: var(--color-accent);
+
+    font-family: var(--font-accent);
+}
+
+.post-card h3 {
+    margin-bottom: 14px;
+}
+
+.post-date {
+    margin-bottom: 18px;
+    color: var(--color-text-light);
+    font-family: var(--font-accent);
+}
+
+.post-link {
+    display: inline-block;
+    margin-top: 24px;
+
+    color: var(--color-accent);
+    font-weight: 700;
+    text-decoration: none;
+
+    transition: var(--transition);
+}
+
+.post-link:hover {
+    color: var(--color-accent-hover);
+    transform: translateX(6px);
+}
+
+/* ==========================================
+   Journal modal
+========================================== */
+
+.journal-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    background: rgba(0, 0, 0, .55);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: opacity .4s ease, visibility .4s ease;
+}
+
+.journal-modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.journal-window {
+    position: relative;
+
+    width: min(850px, 90%);
+    max-height: 85vh;
+    overflow: auto;
+
+    padding: 60px;
+
+    background: #F8F5EF;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-large);
+
+    box-shadow: var(--shadow-large);
+}
+
+.journal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    border: 0;
+    background: transparent;
+
+    color: var(--color-text);
+    font-size: 2rem;
+    line-height: 1;
+
+    cursor: pointer;
+}
+
+.journal-close:hover {
+    color: var(--color-accent);
+}
+
+.intro,
+.typewriter {
+    min-height: 250px;
+
+    white-space: pre-line;
+
+    font-size: 1.15rem;
+    line-height: 2;
+}
+
+.manifest {
+    margin-top: 40px;
+}
+
+.manifest ul {
+    padding-left: 20px;
+    line-height: 2;
+}
+
+.smile {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.north-star {
+    margin: 50px auto 20px;
+
+    font-size: 3rem;
+    text-align: center;
+
+    animation: pulse 2s infinite;
+}
+
+.follow {
+    margin-bottom: 30px;
+
+    font-family: var(--font-accent);
+    text-align: center;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: .4;
+        transform: scale(.95);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.15);
+    }
+
+    100% {
+        opacity: .4;
+        transform: scale(.95);
+    }
+}
+
+@media (max-width: 768px) {
+    .latest-posts {
+        padding: 70px 0;
+    }
+
+    .posts-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .journal-window {
+        width: 95%;
+        max-height: 90vh;
+        padding: 50px 28px 30px;
+    }
+}

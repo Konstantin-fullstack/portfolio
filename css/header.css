@@ -1,0 +1,105 @@
+/* ==========================================
+   Header
+========================================== */
+
+.header {
+    margin-bottom: 40px;
+    padding: 40px 0 24px;
+
+    background: var(--color-background);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.header-top {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.logo {
+    border: 0;
+    background: none;
+
+    color: var(--color-text);
+
+    font-family: var(--font-title);
+    font-size: 3rem;
+    font-weight: 600;
+
+    transition: var(--transition);
+}
+
+.logo:hover {
+    color: var(--color-accent);
+    transform: scale(1.02);
+}
+
+.tagline {
+    margin-top: 10px;
+    margin-bottom: 0;
+
+    color: var(--color-text-light);
+
+    font-family: var(--font-accent);
+    font-size: .95rem;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.nav a {
+    position: relative;
+
+    color: var(--color-text);
+
+    font-family: var(--font-body);
+    text-decoration: none;
+}
+
+.nav a::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+
+    width: 0;
+    height: 1px;
+
+    background: var(--color-accent);
+
+    transition: var(--transition);
+}
+
+.nav a:hover::after,
+.nav a.active::after {
+    width: 100%;
+}
+
+.nav a.active {
+    color: var(--color-accent);
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 28px 0 20px;
+    }
+
+    .logo {
+        font-size: 2.4rem;
+    }
+
+    .nav {
+        gap: 18px 24px;
+    }
+}
